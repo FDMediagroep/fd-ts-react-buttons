@@ -12,6 +12,9 @@ module.exports = {
     entry: {
         "demo": ["./demo/demo.tsx"]
     },
+    optimization: {
+        minimize: true
+    },
     output: {
         path       : path.join(__dirname, '/dist'),
         filename   : '[name].js',

@@ -12,6 +12,10 @@ module.exports = {
     entry: {
         "fd-buttons": ["./src/fd-buttons.tsx"]
     },
+    optimization: {
+        minimize: true,
+        usedExports: true
+    },
     output: {
         path       : path.join(__dirname, '/dist'),
         filename   : '[name].js',
@@ -36,7 +40,8 @@ module.exports = {
             'process.env': {
                 'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
             }
-        })
+        }),
+        new webpack.optimize.ModuleConcatenationPlugin()
     ],
     module: {
         rules: [
