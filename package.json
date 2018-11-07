@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-buttons",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "FD-themed buttons",
   "types": "dist/fd-buttons.d.ts",
   "main": "dist/fd-buttons.js",
@@ -35,6 +35,7 @@
   "devDependencies": {
     "@types/jest": "^23.3.9",
     "@types/react": "^16.4.18",
+    "@types/react-dom": "^16.0.9",
     "@types/react-test-renderer": "^16.0.3",
     "@types/styled-components": "^4.0.3",
     "awesome-typescript-loader": "^5.2.1",

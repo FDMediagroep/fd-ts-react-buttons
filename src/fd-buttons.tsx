@@ -6,6 +6,7 @@ export interface Props {
     layout?: 'primary' | 'secondary';
     children?: React.ReactNode;
     className?: string;
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 export default class Button extends React.PureComponent<Props, any> {
@@ -19,6 +20,7 @@ export default class Button extends React.PureComponent<Props, any> {
         }
         return (
             <StyledButton
+                onClick={this.props.onClick}
                 type={this.props.type ? this.props.type : 'button'}
                 className={classes.join(' ')}
             >
