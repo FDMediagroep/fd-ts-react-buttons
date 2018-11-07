@@ -10,8 +10,7 @@ console.info('process.env.NODE_ENV', JSON.stringify(process.env.NODE_ENV));
 module.exports = {
     // devtool: "source-map",
     entry: {
-        "primary-button": ["./src/primary-button.tsx"],
-        "secondary-button": ["./src/secondary-button.tsx"]
+        "fd-buttons": ["./src/fd-buttons.tsx"]
     },
     output: {
         path       : path.join(__dirname, '/dist'),

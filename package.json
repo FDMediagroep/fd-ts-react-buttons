@@ -1,9 +1,9 @@
 {
-  "name": "@fd/ts-react-buttons",
+  "name": "@fdmg/fd-buttons",
   "version": "1.0.0",
   "description": "FD-themed buttons",
-  "types": "dist/fd-buttons.d.ts",
-  "main": "dist/fd-buttons.js",
+  "types": "dist/primary-button.d.ts",
+  "main": "dist/secondary-button.js",
   "files": [
     "dist/"
   ],
