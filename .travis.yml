@@ -21,7 +21,9 @@ deploy:
       secure: ZKCiw04801jSQTY6xUO/rXwdp4bTUmNFzv0be+lANp/wyiXdqGRLPxdkwwEuNQIGbAlzvV8c+s3TcRsLWyWrsPXWJe54/gsueSCBnDPJaHFxMxhJ7dfrepnLPDw4VgHYjA33D+4wyIr1XyERKEGT0tsgvCOxWBIaFk6bvs8TN7LUh1TaFE1sECrBfnE5HyxP5cH1eq7tYw9J//SRx1QmbH9oJ6akV2Hz2m1v+pJ4nG7JdfFXbw7mGaXk7NJQ3Cm/ZiGCOCf0zSNH2/ZEjg2D8lokm+FC/kcBdhLi/Abhg4xhYB5AahDdEUHfwRAMFKkwhe4rJ+xkN6bJx0nOc4gpxlyJrSvp7IUdsnguhYnjh8z9pWj+mSK8vteKUQtwun4P0aC5YHjtPiekQYnLcW9ewv0IbyDW0mlklJUuNAuo8rNVo3vJsgILBcmTi70BuiRGE1tDN3kk3SLf34dsln1+PtMZ+1aeWZbzjkCspe/Wp4Io5KKV/G8mjUrydEPkehF73NO8zxVGDGNn7aVQXmjb/uAamXJbMESXTH7EEBvWjwz87USsVFBEli2lrrPYLD2HWZtplArDHCS9XzADyz3+rb6rUAsIIkEm54va9eYiRCByzikaiGmIzvSu1rhAJ7FaXSbyhf90ZcMAoiA/DYBCejZuqy9aAM32wfwmn5jttBo=
     access_key_id:
       secure: W4GOCiDQ/EgW+E64ORnksUSi7iFW/YSekEOhvEi0Y5ZJAlIfJfAVK/4fommSOv4Ubak16rm68XvQ2TaSwceNeJP3piirJ09uxG5aXuBw+oVThllUpofTmhfcP+dcWJ6vyYiBEnyK0G9OGZvQmRE+8yI/fxXj02mha+V/ubVmvcHwlUzTJQtdPkeB7zIRBDXWO8Hp3qDhgucBOz+7VPfJEgpwQA37s7WaosoPKMGZm2mQlrBEmf3F3gO+uShlnHmy5yWSdRTTkYqLMI4HCzkTuUTCDlwjsZvwkvl0xz+IOxsXOhuKTF3pa/q1LaNqv6F/xjAwjogr8cKOsPyi417QotH+lJ+q7wB9Po+eQGq2KeOLIoF6ANXyCjGYg04wwHUbXnpDLbVjhTEsuzEkkZf13iNr5tekgJC4qes1Jvq4zpzG5/MPWftnipIYaWmme8bBjsyc8mmRcXhWTWMagepM7Y3oWYb9P/fZkMkgwFSYZBAsuzzPYhIcJ37+Mq7k0RG4OO/zGcmwtbTMUb3gK4Om8vGA+qRbPnsFti71v7vrtfNlCyvq5DfgdKvRmKnWnOLj7h6FSdmBsv86wb7hRYFTYOUjRt12tKQoj0r+Pi1Oo3iRpM6XXnNSIM7q6yFWxD968qlDAgkW3EcQ5FnV3b4Za0NS5MaHF4WSVsa7pZbujTY=
-    default_region: "eu-west-1"
-    bucket: "s3://static.fd.nl/react/buttons"
+    region: "eu-west-1"
+    bucket: "static.fd.nl"
     skip_cleanup: true
     acl: public_read
+    local_dir: dist
+    upload_dir: react/buttons
