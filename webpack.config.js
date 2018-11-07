@@ -16,6 +16,7 @@ module.exports = {
         path       : path.join(__dirname, '/dist'),
         filename   : '[name].js',
         chunkFilename   : '[name].chunk.js',
+        libraryTarget: 'commonjs2',
         publicPath : ''
     },
     resolve: {
