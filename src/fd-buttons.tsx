@@ -1,4 +1,5 @@
 import React from "react";
+import styled from 'styled-components';
 
 export interface Props {
     type?: 'button' | 'submit';
@@ -17,12 +18,16 @@ export default class Button extends React.PureComponent<Props, any> {
             classes.push(this.props.className);
         }
         return (
-            <button
+            <StyledButton
                 type={this.props.type ? this.props.type : 'button'}
                 className={classes.join(' ')}
             >
                 {this.props.children}
-            </button>
+            </StyledButton>
         );
     }
 }
+
+const StyledButton = styled('button')`
+    background-color: orange;
+`;

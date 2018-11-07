@@ -2,84 +2,84 @@
 
 exports[`Button renders correctly 1`] = `
 <button
-  className=""
+  className="sc-bdVaJa ZwXDY"
   type="button"
 />
 `;
 
 exports[`Button renders correctly 2`] = `
 <button
-  className=""
+  className="sc-bdVaJa ZwXDY"
   type="submit"
 />
 `;
 
 exports[`Button renders correctly 3`] = `
 <button
-  className="test1"
+  className="test1 sc-bdVaJa ZwXDY"
   type="button"
 />
 `;
 
 exports[`Button renders correctly 4`] = `
 <button
-  className="test2"
+  className="test2 sc-bdVaJa ZwXDY"
   type="submit"
 />
 `;
 
 exports[`Button renders primary correctly 1`] = `
 <button
-  className="primary"
+  className="primary sc-bdVaJa ZwXDY"
   type="button"
 />
 `;
 
 exports[`Button renders primary correctly 2`] = `
 <button
-  className="primary"
+  className="primary sc-bdVaJa ZwXDY"
   type="submit"
 />
 `;
 
 exports[`Button renders primary correctly 3`] = `
 <button
-  className="primary test1"
+  className="primary test1 sc-bdVaJa ZwXDY"
   type="button"
 />
 `;
 
 exports[`Button renders primary correctly 4`] = `
 <button
-  className="primary test2"
+  className="primary test2 sc-bdVaJa ZwXDY"
   type="submit"
 />
 `;
 
 exports[`Button renders secondary correctly 1`] = `
 <button
-  className="secondary"
+  className="secondary sc-bdVaJa ZwXDY"
   type="button"
 />
 `;
 
 exports[`Button renders secondary correctly 2`] = `
 <button
-  className="secondary"
+  className="secondary sc-bdVaJa ZwXDY"
   type="submit"
 />
 `;
 
 exports[`Button renders secondary correctly 3`] = `
 <button
-  className="secondary test1"
+  className="secondary test1 sc-bdVaJa ZwXDY"
   type="button"
 />
 `;
 
 exports[`Button renders secondary correctly 4`] = `
 <button
-  className="secondary test2"
+  className="secondary test2 sc-bdVaJa ZwXDY"
   type="submit"
 />
 `;

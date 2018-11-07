@@ -25,6 +25,11 @@ module.exports = {
             'react-dom': 'preact-compat'
         }
     },
+    externals: {
+        'react': 'react',
+        'react-dom': 'react-dom',
+        'styled-components': 'styled-components'
+    },
     plugins: [
         new webpack.DefinePlugin({
             'process.env': {
@@ -37,12 +42,8 @@ module.exports = {
             // all files with a `.ts` or `.tsx` extension will be handled by a TypeScript loader
             {
                 test: /\.tsx?$/,
-                use: ['awesome-typescript-loader', {loader: 'astroturf/loader', options: { extension: '.module.scss' }}]
-            },
-            {
-                test: /\module\.scss$/,
-                use: ['style-loader', 'css-loader?modules=true', 'sass-loader'],
-            },
+                use: ['awesome-typescript-loader']
+            }
         ]
     }
 };

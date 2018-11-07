@@ -1,14 +1,18 @@
 {
   "name": "@fdmg/fd-buttons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FD-themed buttons",
-  "types": "dist/primary-button.d.ts",
-  "main": "dist/secondary-button.js",
+  "types": "dist/fd-buttons.d.ts",
+  "main": "dist/fd-buttons.js",
   "files": [
     "dist/"
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:FDMediagroep/fd-ts-react-buttons.git"
   },
   "scripts": {
     "build-dev": "webpack --mode=development",
@@ -16,6 +20,7 @@
     "lint": "tslint -p .",
     "release": "npm update && npm i && npm run test && npm run lint && npm run build-prod",
     "test": "jest",
+    "tsc": "tsc -d",
     "updateSnapshot": "jest --updateSnapshot"
   },
   "keywords": [
@@ -31,7 +36,7 @@
     "@types/jest": "^23.3.9",
     "@types/react": "^16.4.18",
     "@types/react-test-renderer": "^16.0.3",
-    "astroturf": "^0.8.1",
+    "@types/styled-components": "^4.0.3",
     "awesome-typescript-loader": "^5.2.1",
     "chokidar": "^2.0.4",
     "coveralls": "^3.0.2",
@@ -39,10 +44,6 @@
     "cross-env": "^5.2.0",
     "jest": "^23.6.0",
     "jest-cli": "^23.6.0",
-    "preact": "^8.3.1",
-    "preact-compat": "^3.18.4",
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1",
     "react-test-renderer": "^16.6.1",
     "ts-jest": "^23.10.4",
     "tslint": "^5.11.0",
@@ -50,6 +51,11 @@
     "typescript": "^3.1.6",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "styled-components": "^3.4.10"
   },
   "jest": {
     "transform": {
