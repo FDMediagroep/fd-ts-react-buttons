@@ -24,3 +24,4 @@ deploy:
     default_region: "eu-west-1"
     bucket: "s3://static.fd.nl/react/buttons"
     skip_cleanup: true
+    acl: public_read
