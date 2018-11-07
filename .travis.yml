@@ -1,11 +1,18 @@
 language: node_js
 node_js:
-  - node
+- node
 addons:
   apt:
     packages:
-      - nodejs-legacy
+    - nodejs-legacy
 install:
-  - npm install
+- npm install
 after_success:
-  - cat ./dist/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+- cat ./dist/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+deploy:
+  provider: npm
+  email: willem_liu@hotmail.com
+  on:
+    branch: master
+  api_key:
+    secure: t9+dBBoFfuUtt5tGj1i+gVo9LDTCqBhB1/eMRjy8+L+9X2VqHIt/iIWqXblOI/T4NEdu2owcnERrrJsA4i/OLs+HS1oKI7xlns541peZYAdZF36ozEQnwvGLXCQd1ZSf/OGhp2woG1SlcPToT31kGDL0d4x/eT2JFMTtWWi5PIedVkuzIY2OtjtH5K+A8kl57HZOjYdfc17MdSYga5kMZvYz5nENFzB+8fTXFv49conAfCH45KG7UTPPgmEc+IXykNFw4EMxSbngrasooLpa/j0+Lz+auXDw5s3TY3TkWwLpE7VgPDD8wHUGiVEJ/ctDuWVC7Tz1j90xk2JcgZI4en4l5O3t0rmNWkHsjtfBBgp378Hb1Lys5RbxJ7eYJ2IeGgg1L4ClMSxL5sHsTQqJpwKOhH7qGYDcptH9Ocr66/lqcaNl/4UbT6qn1deRJMRc4TmBpDg8L/gHBsJquKpMwiccC6TD8hUfbQDS1vSuXoQyjstwqpb0yhowDNjP9/qUGkkRA7bEIVjMgxlpRiQVCaTM9B8mLnAByoLHvEqSsidZns3k5ie6MTaOS2E/S3II0Q5mL4clb3r2arweItYgC3BYESwudx0jkE36geWIkVGb6kIaQnzzdKaCrJ3dNrr1x4hJDTgeojiAfc/WrmFqwUNTqF/f7jeyDBIhiLjumUE=
