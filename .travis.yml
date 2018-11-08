@@ -1,6 +1,10 @@
 language: node_js
 node_js:
   - node
+python:
+  - "3.5"
+cache:
+  - pip
 addons:
   apt:
     packages:
@@ -8,7 +12,8 @@ addons:
 stages:
   - test
 install:
-- npm install
+  - pip install awscli
+  - npm install
 jobs:
   include:
     - stage: test
@@ -33,3 +38,5 @@ deploy:
     acl: public_read
     local_dir: dist
     upload_dir: react/buttons
+after_deploy:
+  - aws cloudfront create-invalidation --distribution-id $CDN_DISTRIBUTION_ID --paths "/react/buttons/*"
