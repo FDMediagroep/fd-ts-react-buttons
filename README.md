@@ -12,3 +12,4 @@ FD-themed buttons.
 # Demo
 To run the demo, check-out this repository and run `npm run build-demo`.
 After the build succeeded you can open `dist/demo.html` with your webbrowser.
+* [Demo](http://static.fd.nl/react/buttons/demo.html)
