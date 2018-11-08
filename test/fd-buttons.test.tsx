@@ -1,5 +1,4 @@
 import TestRenderer from 'react-test-renderer';
-import ReactTestUtils from 'react-dom/test-utils';
 import Button from '../src/fd-buttons';
 import React from 'react';
 
