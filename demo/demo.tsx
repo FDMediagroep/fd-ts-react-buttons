@@ -22,10 +22,6 @@ const secondaryTheme: Theme = {
     color: '#fff'
 }
 
-const StyledSection = styled('section')`
-    padding: 16px;
-`;
-
 const GlobalStyles = css`
     body {
         background-color: #ffeadb;
@@ -35,7 +31,7 @@ const GlobalStyles = css`
     }
 `;
 
-ReactDOM.render(<StyledSection>
+ReactDOM.render(<section>
         <style>{GlobalStyles}</style>
 
         <div><Button layout="default" onClick={handleClick}>Default</Button></div>
@@ -63,5 +59,5 @@ ReactDOM.render(<StyledSection>
         <div><Button secondaryTheme={secondaryTheme} layout="secondary" onClick={handleClick} borderRadius={3}>Secondary custom theme border-radius</Button></div>
         <div><Button secondaryTheme={secondaryTheme} layout="secondary" fullWidth={true} onClick={handleClick}>Secondary custom theme full width</Button></div>
         <div><Button secondaryTheme={secondaryTheme} layout="secondary" fullWidth={true} onClick={handleClick} borderRadius={3}>Secondary custom theme full width border-radius</Button></div>
-    </StyledSection>,
+    </section>,
     document.getElementById('root'));
