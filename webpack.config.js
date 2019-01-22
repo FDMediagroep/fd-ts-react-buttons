@@ -10,7 +10,7 @@ console.info('process.env.NODE_ENV', JSON.stringify(process.env.NODE_ENV));
 module.exports = {
     // devtool: "source-map",
     entry: {
-        "fd-buttons": ["./src/fd-buttons.tsx"]
+        "buttons": ["./src/buttons.tsx"]
     },
     optimization: {
         minimize: true,
@@ -24,11 +24,11 @@ module.exports = {
         publicPath : ''
     },
     resolve: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx']/*,
         alias: {
             'react': 'preact-compat',
             'react-dom': 'preact-compat'
-        }
+        }*/
     },
     externals: {
         'react': 'react',
