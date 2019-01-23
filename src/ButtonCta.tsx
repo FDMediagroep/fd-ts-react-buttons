@@ -50,4 +50,4 @@ const GlobalStyles = createGlobalStyle`
 }
 `;
 
-export const ButtonCallToActionStyles = GlobalStyles;
+export {GlobalStyles as ButtonCallToActionStyles};

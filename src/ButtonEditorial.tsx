@@ -50,4 +50,4 @@ const GlobalStyles = createGlobalStyle`
 }
 `;
 
-export const ButtonEditorialStyles = GlobalStyles;
+export {GlobalStyles as ButtonEditorialStyles};
