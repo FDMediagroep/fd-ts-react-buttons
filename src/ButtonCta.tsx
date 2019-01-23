@@ -14,9 +14,16 @@ export default class ButtonCallToAction extends PureComponent<any, any> {
 
 const GlobalStyles = createGlobalStyle`
 .fd-button-cta {
-    color: #FFFFFF;
-    font-family: ProximaNovaBold;
+    min-height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
     font-size: 1rem;
+    line-height: 1;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 1rem;
     border: none;
     text-align: center;
     background-color: #ff8529;
@@ -24,17 +31,21 @@ const GlobalStyles = createGlobalStyle`
         background-color: #DF680E;
     }
     box-shadow: rgba(0, 0, 0, 0.2) 0px -2px 0px 0px inset;
+    border: none;
     border-radius: 3px;
-    padding: .5rem 1rem;
-    line-height: 1.2;
-    cursor: pointer;
+    transition: all .1s;
+    font-family: 'ProximaNovaBold', sans-serif;
+    font-weight: normal;
     &.m {
-        font-size: 18px;
-        padding: .75rem 1.5rem;
+        min-height: 2.5rem;
     }
     &.l {
-        font-size: 20px;
-        padding: .75rem 2rem;
+        font-size: 1.25rem;
+        padding: 0 1.5rem;
+        min-height: 3.5rem;
+    }
+    &:active {
+        box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2) inset;
     }
 }
 `;
