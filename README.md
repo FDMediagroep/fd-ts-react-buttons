@@ -18,7 +18,11 @@ After the build succeeded you can open `dist/demo.html` with your webbrowser.
 ```
 import Button from '@fdmg/fd-buttons';
 ...
-<Button onClick={handleClick}>Default button</Button>
-<Button onClick={handleClick} className="m">Medium-sized button</Button>
-<Button onClick={handleClick} className="l">Large-sized button</Button>
+<ButtonCallToAction onClick={handleClick}>.fd-button-cta</ButtonCallToAction>
+<ButtonCallToAction onClick={handleClick} className="m">Medium-sized .fd-button-cta.m</ButtonCallToAction>
+<ButtonCallToAction onClick={handleClick} className="l">Large-sized .fd-button-cta.l</ButtonCallToAction>
+
+<ButtonEditorial onClick={handleClick}>.fd-button</ButtonEditorial>
+<ButtonEditorial onClick={handleClick} className="m">Medium-sized .fd-button.m</ButtonEditorial>
+<ButtonEditorial onClick={handleClick} className="l">Large-sized .fd-button.l</ButtonEditorial>
 ```
