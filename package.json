@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-buttons",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "FD-themed buttons",
   "types": "dist/Buttons.d.ts",
   "main": "dist/buttons.js",
@@ -43,6 +43,7 @@
     "@types/react-dom": "^16.8.1",
     "@types/react-test-renderer": "^16.8.1",
     "@types/styled-components": "^4.1.10",
+    "@types/webpack-env": "^1.13.7",
     "awesome-typescript-loader": "^5.2.1",
     "chokidar": "^2.1.1",
     "coveralls": "^3.0.2",
