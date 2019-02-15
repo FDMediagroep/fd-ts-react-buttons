@@ -1,11 +1,14 @@
 import React, { PureComponent } from "react";
 import { createGlobalStyle } from "styled-components";
 
+export type ButtonTypes = 'default' | 'persoonlijk';
+
 export interface Props {
+    buttonStyle: ButtonTypes;
     className?: string;
     followButtonText?: string;
     followLink?: string;
-    unfollowButtonText?: string;
+    unFollowButtonText?: string;
     unFollowLink?: string;
     onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
     selected?: boolean;
@@ -17,8 +20,8 @@ export default class FollowButton extends PureComponent<Props, any> {
         return (
             <>
                 <GlobalStyle/>
-                <button className={`fd-follow-button${this.props.className ? ` ${this.props.className}` : ''}`} onClick={this.props.onClick} data-tag={this.props.tag} data-selected={this.props.selected} data-addurl={this.props.followLink ? this.props.followLink : '/add-interest'} data-deleteurl={this.props.unFollowLink ? this.props.unFollowLink : '/delete-interest'}>
-                    <span className="cross"/> <span className="button-text default-text">{this.props.followButtonText ? this.props.followButtonText : 'Volg'}</span><span className="button-text active-text">{this.props.unfollowButtonText ? this.props.unfollowButtonText : 'Ontvolg'}</span>
+                <button className={`fd-follow-button${this.props.className ? ` ${this.props.className}` : ''}${this.props.buttonStyle ? ` ${this.props.buttonStyle}` : ''}`} onClick={this.props.onClick} data-tag={this.props.tag} data-selected={this.props.selected} data-addurl={this.props.followLink ? this.props.followLink : '/add-interest'} data-deleteurl={this.props.unFollowLink ? this.props.unFollowLink : '/delete-interest'}>
+                    <span className="cross"/> <span className="button-text default-text">{this.props.followButtonText ? this.props.followButtonText : 'Volg'}</span><span className="button-text active-text">{this.props.unFollowButtonText ? this.props.unFollowButtonText : 'Ontvolg'}</span>
                 </button>
             </>
         );

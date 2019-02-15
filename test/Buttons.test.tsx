@@ -22,13 +22,13 @@ describe('Button', () => {
     });
 
     test('renders follow buttons correctly', () => {
-        let button = TestRenderer.create(<FollowButton onClick={() => {}} tag="tag1"/>);
+        let button = TestRenderer.create(<FollowButton buttonStyle="default" onClick={() => {}} tag="tag1"/>);
         expect(button.toJSON()).toMatchSnapshot();
-        button = TestRenderer.create(<FollowButton onClick={() => {}} tag="tag2" selected={true} followLink="https://fd.nl" unFollowLink="https://bnr.nl"/>);
+        button = TestRenderer.create(<FollowButton buttonStyle="default" onClick={() => {}} tag="tag2" selected={true} followLink="https://fd.nl" unFollowLink="https://bnr.nl"/>);
         expect(button.toJSON()).toMatchSnapshot();
-        button = TestRenderer.create(<FollowButton onClick={() => {}} tag="tag3" followButtonText="Follow tha leada leada"/>);
+        button = TestRenderer.create(<FollowButton buttonStyle="default" onClick={() => {}} tag="tag3" followButtonText="Follow tha leada leada"/>);
         expect(button.toJSON()).toMatchSnapshot();
-        button = TestRenderer.create(<FollowButton onClick={() => {}} tag="tag4" selected={true} unfollowButtonText="You can go your own way!"/>);
+        button = TestRenderer.create(<FollowButton buttonStyle="default" onClick={() => {}} tag="tag4" selected={true} unFollowButtonText="You can go your own way!"/>);
         expect(button.toJSON()).toMatchSnapshot();
     });
 });

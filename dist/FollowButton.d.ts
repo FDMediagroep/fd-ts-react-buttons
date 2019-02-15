@@ -1,9 +1,11 @@
 import React, { PureComponent } from "react";
+export declare type ButtonTypes = 'default' | 'persoonlijk';
 export interface Props {
+    buttonStyle: ButtonTypes;
     className?: string;
     followButtonText?: string;
     followLink?: string;
-    unfollowButtonText?: string;
+    unFollowButtonText?: string;
     unFollowLink?: string;
     onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
     selected?: boolean;

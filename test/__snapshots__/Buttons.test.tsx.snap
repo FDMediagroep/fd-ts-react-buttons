@@ -38,7 +38,7 @@ exports[`Button renders editorial buttons correctly 3`] = `
 
 exports[`Button renders follow buttons correctly 1`] = `
 <button
-  className="fd-follow-button"
+  className="fd-follow-button default"
   data-addurl="/add-interest"
   data-deleteurl="/delete-interest"
   data-tag="tag1"
@@ -63,7 +63,7 @@ exports[`Button renders follow buttons correctly 1`] = `
 
 exports[`Button renders follow buttons correctly 2`] = `
 <button
-  className="fd-follow-button"
+  className="fd-follow-button default"
   data-addurl="https://fd.nl"
   data-deleteurl="https://bnr.nl"
   data-selected={true}
@@ -89,7 +89,7 @@ exports[`Button renders follow buttons correctly 2`] = `
 
 exports[`Button renders follow buttons correctly 3`] = `
 <button
-  className="fd-follow-button"
+  className="fd-follow-button default"
   data-addurl="/add-interest"
   data-deleteurl="/delete-interest"
   data-tag="tag3"
@@ -114,7 +114,7 @@ exports[`Button renders follow buttons correctly 3`] = `
 
 exports[`Button renders follow buttons correctly 4`] = `
 <button
-  className="fd-follow-button"
+  className="fd-follow-button default"
   data-addurl="/add-interest"
   data-deleteurl="/delete-interest"
   data-selected={true}
