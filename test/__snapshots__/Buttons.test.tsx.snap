@@ -35,3 +35,105 @@ exports[`Button renders editorial buttons correctly 3`] = `
   className="fd-button l"
 />
 `;
+
+exports[`Button renders follow buttons correctly 1`] = `
+<button
+  className="fd-follow-button"
+  data-addurl="/add-interest"
+  data-deleteurl="/delete-interest"
+  data-tag="tag1"
+  onClick={[Function]}
+>
+  <span
+    className="cross"
+  />
+   
+  <span
+    className="button-text default-text"
+  >
+    Volg
+  </span>
+  <span
+    className="button-text active-text"
+  >
+    Ontvolg
+  </span>
+</button>
+`;
+
+exports[`Button renders follow buttons correctly 2`] = `
+<button
+  className="fd-follow-button"
+  data-addurl="https://fd.nl"
+  data-deleteurl="https://bnr.nl"
+  data-selected={true}
+  data-tag="tag2"
+  onClick={[Function]}
+>
+  <span
+    className="cross"
+  />
+   
+  <span
+    className="button-text default-text"
+  >
+    Volg
+  </span>
+  <span
+    className="button-text active-text"
+  >
+    Ontvolg
+  </span>
+</button>
+`;
+
+exports[`Button renders follow buttons correctly 3`] = `
+<button
+  className="fd-follow-button"
+  data-addurl="/add-interest"
+  data-deleteurl="/delete-interest"
+  data-tag="tag3"
+  onClick={[Function]}
+>
+  <span
+    className="cross"
+  />
+   
+  <span
+    className="button-text default-text"
+  >
+    Follow tha leada leada
+  </span>
+  <span
+    className="button-text active-text"
+  >
+    Ontvolg
+  </span>
+</button>
+`;
+
+exports[`Button renders follow buttons correctly 4`] = `
+<button
+  className="fd-follow-button"
+  data-addurl="/add-interest"
+  data-deleteurl="/delete-interest"
+  data-selected={true}
+  data-tag="tag4"
+  onClick={[Function]}
+>
+  <span
+    className="cross"
+  />
+   
+  <span
+    className="button-text default-text"
+  >
+    Volg
+  </span>
+  <span
+    className="button-text active-text"
+  >
+    You can go your own way!
+  </span>
+</button>
+`;
