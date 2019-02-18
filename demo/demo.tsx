@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {ButtonCallToAction, ButtonEditorial, FollowButton} from "../src/Buttons";
+import {AddButton, ButtonCallToAction, ButtonEditorial, FollowButton} from "../src/Buttons";
 import { createGlobalStyle } from 'styled-components';
 
 function handleClick() {
@@ -33,5 +33,9 @@ ReactDOM.render(<>
         <div><FollowButton buttonStyle="default" onClick={handleClick} selected={true} tag="tag2">.fd-follow-button</FollowButton></div>
         <div><FollowButton buttonStyle="persoonlijk" onClick={handleClick} tag="tag3">.fd-follow-button.persoonlijk</FollowButton></div>
         <div><FollowButton buttonStyle="persoonlijk" onClick={handleClick} selected={true} tag="tag3">.fd-follow-button.persoonlijk</FollowButton></div>
+
+        <div><AddButton buttonStyle="default" onClick={handleClick}>.fd-add-button</AddButton></div>
+        <div><AddButton buttonStyle="persoonlijk" onClick={handleClick}>.fd-add-button.persoonlijk</AddButton></div>
+
     </>,
     document.getElementById('root'));

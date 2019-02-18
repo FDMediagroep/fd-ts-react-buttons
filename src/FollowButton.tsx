@@ -104,8 +104,6 @@ const GlobalStyle = createGlobalStyle`
             }
         }
     }
-
 }
 `;
-
 export {GlobalStyle as FollowButtonStyle};
