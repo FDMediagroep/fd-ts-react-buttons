@@ -26,9 +26,9 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 2px;
     white-space: nowrap;
     padding: 5px 10px;
-    border: 1px solid #c60;
+    border: 1px solid #ff7812;
     color: #ffeadb;
-    background-color: #c60;
+    background-color: #ff7812;
     cursor: pointer;
     transition: all .2s;
     font-family: 'ProximaNovaRegular', sans-serif;
