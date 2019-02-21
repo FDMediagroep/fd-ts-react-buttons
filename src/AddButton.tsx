@@ -32,6 +32,7 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     transition: all .2s;
     font-family: 'ProximaNovaRegular', sans-serif;
+    font-size: 14px;
 
     &.persoonlijk {
         color: #ffffff;

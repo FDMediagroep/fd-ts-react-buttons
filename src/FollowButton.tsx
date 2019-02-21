@@ -40,6 +40,8 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     transition: all .2s;
     font-family: 'ProximaNovaRegular', sans-serif;
+    font-size: 14px;
+
     &:hover {
         background-color: #49a4a2;
         color: #ffeadb;
