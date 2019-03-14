@@ -15,7 +15,7 @@ export default class ButtonEditorial extends PureComponent<any, any> {
 const GlobalStyles = createGlobalStyle`
 .fd-button {
     min-height: 2rem;
-    display: inline-flex;
+    display: inline-block;
     align-items: center;
     vertical-align: middle;
     font-size: 1rem;

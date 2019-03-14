@@ -15,7 +15,7 @@ export default class ButtonCallToAction extends PureComponent<any, any> {
 const GlobalStyles = createGlobalStyle`
 .fd-button-cta {
     min-height: 2rem;
-    display: inline-flex;
+    display: inline-block;
     align-items: center;
     vertical-align: middle;
     font-size: 1rem;
@@ -31,7 +31,6 @@ const GlobalStyles = createGlobalStyle`
         background-color: #DF680E;
     }
     box-shadow: rgba(0, 0, 0, 0.2) 0px -2px 0px 0px inset;
-    border: none;
     border-radius: 2px;
     transition: all .1s;
     font-family: 'ProximaNovaBold', sans-serif;
