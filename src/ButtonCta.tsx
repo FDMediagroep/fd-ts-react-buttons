@@ -27,7 +27,7 @@ const GlobalStyles = createGlobalStyle`
     border: none;
     text-align: center;
     background-color: #ff8529;
-    :hover {
+    &:hover {
         background-color: #DF680E;
     }
     box-shadow: rgba(0, 0, 0, 0.2) 0px -2px 0px 0px inset;
