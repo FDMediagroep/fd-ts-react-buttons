@@ -30,6 +30,7 @@ export default class FollowButton extends PureComponent<Props, any> {
 
 const GlobalStyle = createGlobalStyle`
 .fd-follow-button {
+    position: relative;
     outline: none;
     border-radius: 2px;
     white-space: nowrap;
@@ -38,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
     color: #49a4a2;
     background-color: transparent;
     cursor: pointer;
-    transition: all .2s;
+    transition: background-color .2s;
     font-family: 'ProximaNovaRegular', sans-serif;
     font-size: 14px;
 

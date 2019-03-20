@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-buttons",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "FD-themed buttons",
   "types": "dist/Buttons.d.ts",
   "main": "dist/buttons.js",
@@ -56,9 +56,9 @@
     "ts-jest": "^24.0.0",
     "tslint": "^5.14.0",
     "tslint-react": "^3.6.0",
-    "typescript": "^3.3.3333",
+    "typescript": "^3.3.4000",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.3.0"
   },
   "dependencies": {
     "react": "^16.8.4",

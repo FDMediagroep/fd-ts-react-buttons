@@ -22,6 +22,7 @@ export default class AddButton extends PureComponent<any, any> {
 
 const GlobalStyle = createGlobalStyle`
 .fd-add-button {
+    position: relative;
     outline: none;
     border-radius: 2px;
     white-space: nowrap;
@@ -30,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
     color: #ffeadb;
     background-color: #ff7812;
     cursor: pointer;
-    transition: all .2s;
+    transition: background-color .2s;
     font-family: 'ProximaNovaRegular', sans-serif;
     font-size: 14px;
 

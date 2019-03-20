@@ -14,6 +14,7 @@ export default class ButtonEditorial extends PureComponent<any, any> {
 
 const GlobalStyles = createGlobalStyle`
 .fd-button {
+    position: relative;
     min-height: 2rem;
     display: inline-block;
     align-items: center;
@@ -33,7 +34,7 @@ const GlobalStyles = createGlobalStyle`
     box-shadow: rgba(0, 0, 0, 0.2) 0px -2px 0px 0px inset;
     border: none;
     border-radius: 2px;
-    transition: all .1s;
+    transition: background-color .1s;
     font-family: 'ProximaNovaBold', sans-serif;
     font-weight: normal;
     &.m {
