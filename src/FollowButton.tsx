@@ -30,8 +30,8 @@ export default class FollowButton extends PureComponent<Props, any> {
 
 const GlobalStyle = createGlobalStyle`
 .fd-follow-button {
+    outline: none; /* Sorry, visually impaired, I tried */
     position: relative;
-    outline: none;
     border-radius: 2px;
     white-space: nowrap;
     padding: 5px 10px;

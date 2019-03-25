@@ -14,6 +14,7 @@ export default class ButtonEditorial extends PureComponent<any, any> {
 
 const GlobalStyles = createGlobalStyle`
 .fd-button {
+    outline: none; /* Sorry, visually impaired, I tried */
     position: relative;
     min-height: 2rem;
     display: inline-block;

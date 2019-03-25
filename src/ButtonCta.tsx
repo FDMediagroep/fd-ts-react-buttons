@@ -14,6 +14,7 @@ export default class ButtonCallToAction extends PureComponent<any, any> {
 
 const GlobalStyles = createGlobalStyle`
 .fd-button-cta {
+    outline: none; /* Sorry, visually impaired, I tried */
     position: relative;
     min-height: 2rem;
     display: inline-block;

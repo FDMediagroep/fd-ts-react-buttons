@@ -22,8 +22,8 @@ export default class AddButton extends PureComponent<any, any> {
 
 const GlobalStyle = createGlobalStyle`
 .fd-add-button {
+    outline: none; /* Sorry, visually impaired, I tried */
     position: relative;
-    outline: none;
     border-radius: 2px;
     white-space: nowrap;
     padding: 5px 10px;
