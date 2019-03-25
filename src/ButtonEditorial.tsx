@@ -33,7 +33,6 @@ const GlobalStyles = createGlobalStyle`
         background-color: #2e3843;
     }
     box-shadow: rgba(0, 0, 0, 0.2) 0px -2px 0px 0px inset;
-    border: none;
     border-radius: 2px;
     transition: background-color .1s;
     font-family: 'ProximaNovaBold', sans-serif;
