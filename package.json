@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-buttons",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "FD-themed buttons",
   "types": "dist/Buttons.d.ts",
   "main": "dist/buttons.js",

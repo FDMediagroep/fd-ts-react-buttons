@@ -43,8 +43,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'ProximaNovaRegular', sans-serif;
     font-size: 14px;
 
-    &:hover {
+    &:hover, &:active, &:focus {
         background-color: #49a4a2;
+        border-color: #49a4a2;
         color: #ffeadb;
     }
     .cross {
@@ -75,6 +76,10 @@ const GlobalStyle = createGlobalStyle`
     &[data-selected="true"] {
         background-color: #49a4a2;
         color: #ffeadb;
+        &:hover, &:active, &:focus {
+            color: #49a4a2;
+            background-color: transparent;
+        }
         .cross {
             transform: rotate(45deg);
         }
@@ -94,7 +99,7 @@ const GlobalStyle = createGlobalStyle`
             color: #000000;
         }
 
-        &:hover {
+        &:hover, &:active, &:focus {
             .cross,
             .button-text {
                 color: #ffffff;
@@ -104,6 +109,12 @@ const GlobalStyle = createGlobalStyle`
         &[data-selected="true"] {
             .button-text, .cross {
                 color: #ffffff;
+            }
+            &:hover, &:active, &:focus {
+                .button-text, .cross {
+                    color: #000000;
+                    background-color: transparent;
+                }
             }
         }
     }

@@ -29,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
     border: none;
     text-align: center;
     background-color: #ff8529;
-    &:hover {
+    &:hover, &:active, &:focus {
         background-color: #DF680E;
     }
     box-shadow: rgba(0, 0, 0, 0.2) 0px -2px 0px 0px inset;
@@ -45,7 +45,7 @@ const GlobalStyles = createGlobalStyle`
         padding: 0 1.5rem;
         min-height: 3.5rem;
     }
-    &:active {
+    &:active, &:active, &:focus {
         box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2) inset;
     }
 }

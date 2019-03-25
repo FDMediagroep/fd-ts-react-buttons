@@ -30,6 +30,10 @@ const GlobalStyle = createGlobalStyle`
     border: 1px solid #ff7812;
     color: #ffeadb;
     background-color: #ff7812;
+    &:hover, &:active, &:focus {
+        background-color: #DF680E;
+        border-color: #DF680E;
+    }
     cursor: pointer;
     transition: background-color .2s;
     font-family: 'ProximaNovaRegular', sans-serif;
