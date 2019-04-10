@@ -27,12 +27,12 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 2px;
     white-space: nowrap;
     padding: 5px 10px;
-    border: 1px solid #ff7812;
+    border: 1px solid #677381;
     color: #ffeadb;
-    background-color: #ff7812;
+    background-color: #677381;
     &:hover, &:active, &:focus {
-        background-color: #DF680E;
-        border-color: #DF680E;
+        background-color: #2e3843;
+        border-color: #2e3843;
     }
     cursor: pointer;
     transition: background-color .2s;
