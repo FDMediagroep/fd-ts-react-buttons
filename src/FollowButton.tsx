@@ -43,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'ProximaNovaRegular', sans-serif;
     font-size: 14px;
 
-    &:hover, &:active, &:focus {
+    &:hover {
         background-color: #49a4a2;
         border-color: #49a4a2;
         color: #ffeadb;
@@ -76,7 +76,7 @@ const GlobalStyle = createGlobalStyle`
     &[data-selected="true"] {
         background-color: #49a4a2;
         color: #ffeadb;
-        &:hover, &:active, &:focus {
+        &:hover {
             color: #49a4a2;
             background-color: transparent;
         }
@@ -99,7 +99,7 @@ const GlobalStyle = createGlobalStyle`
             color: #000000;
         }
 
-        &:hover, &:active, &:focus {
+        &:hover {
             .cross,
             .button-text {
                 color: #ffffff;
@@ -110,7 +110,7 @@ const GlobalStyle = createGlobalStyle`
             .button-text, .cross {
                 color: #ffffff;
             }
-            &:hover, &:active, &:focus {
+            &:hover {
                 .button-text, .cross {
                     color: #000000;
                     background-color: transparent;

@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
     border: 1px solid #677381;
     color: #ffeadb;
     background-color: #677381;
-    &:hover, &:active, &:focus {
+    &:hover {
         background-color: #2e3843;
         border-color: #2e3843;
     }
