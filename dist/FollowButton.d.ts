@@ -14,5 +14,5 @@ export interface Props {
 export default class FollowButton extends PureComponent<Props, any> {
     render(): JSX.Element;
 }
-declare const GlobalStyle: import("styled-components").GlobalStyleComponent<{}, import("styled-components").DefaultTheme>;
-export { GlobalStyle as FollowButtonStyle };
+declare const styles: import("styled-components").FlattenSimpleInterpolation;
+export { styles as FollowButtonStyle };

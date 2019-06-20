@@ -8,5 +8,5 @@ export interface Props {
 export default class AddButton extends PureComponent<any, any> {
     render(): JSX.Element;
 }
-declare const GlobalStyle: import("styled-components").GlobalStyleComponent<{}, import("styled-components").DefaultTheme>;
-export { GlobalStyle as AddButtonStyle };
+declare const styles: import("styled-components").FlattenSimpleInterpolation;
+export { styles as AddButtonStyle };

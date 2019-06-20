@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 export type ButtonTypes = 'default' | 'persoonlijk';
 
@@ -28,7 +28,7 @@ export default class FollowButton extends PureComponent<Props, any> {
     }
 }
 
-const GlobalStyle = createGlobalStyle`
+const styles = css`
 .fd-follow-button {
     outline: none; /* Sorry, visually impaired, I tried */
     position: relative;
@@ -120,4 +120,7 @@ const GlobalStyle = createGlobalStyle`
     }
 }
 `;
-export {GlobalStyle as FollowButtonStyle};
+
+const GlobalStyle = createGlobalStyle`${styles}`;
+
+export {styles as FollowButtonStyle};

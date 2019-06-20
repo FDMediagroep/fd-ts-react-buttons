@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 export type ButtonTypes = 'default' | 'persoonlijk';
 
@@ -20,7 +20,7 @@ export default class AddButton extends PureComponent<any, any> {
     }
 }
 
-const GlobalStyle = createGlobalStyle`
+const styles = css`
 .fd-add-button {
     outline: none; /* Sorry, visually impaired, I tried */
     position: relative;
@@ -44,4 +44,7 @@ const GlobalStyle = createGlobalStyle`
     }
 }
 `;
-export {GlobalStyle as AddButtonStyle};
+
+const GlobalStyle = createGlobalStyle`${styles}`;
+
+export {styles as AddButtonStyle};

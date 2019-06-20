@@ -1,18 +1,18 @@
 import React, { PureComponent } from "react";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 export default class ButtonEditorial extends PureComponent<any, any> {
     render() {
         return (
             <>
-                <GlobalStyles/>
+                <GlobalStyle/>
                 <button {...this.props} className={`fd-button${this.props.className ? ` ${this.props.className}` : ''}`}>{this.props.children}</button>
             </>
         );
     }
 }
 
-const GlobalStyles = createGlobalStyle`
+const styles = css`
 .fd-button {
     outline: none; /* Sorry, visually impaired, I tried */
     position: relative;
@@ -51,4 +51,6 @@ const GlobalStyles = createGlobalStyle`
 }
 `;
 
-export {GlobalStyles as ButtonEditorialStyles};
+const GlobalStyle = createGlobalStyle`${styles}`;
+
+export {styles as ButtonEditorialStyles};

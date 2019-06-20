@@ -1,18 +1,18 @@
 import React, { PureComponent } from "react";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 export default class ButtonCallToAction extends PureComponent<any, any> {
     render() {
         return (
             <>
-                <GlobalStyles/>
+                <GlobalStyle/>
                 <button {...this.props} className={`fd-button-cta${this.props.className ? ` ${this.props.className}` : ''}`}>{this.props.children}</button>
             </>
         );
     }
 }
 
-const GlobalStyles = createGlobalStyle`
+const styles = css`
 .fd-button-cta {
     outline: none; /* Sorry, visually impaired, I tried */
     position: relative;
@@ -51,4 +51,6 @@ const GlobalStyles = createGlobalStyle`
 }
 `;
 
-export {GlobalStyles as ButtonCallToActionStyles};
+const GlobalStyle = createGlobalStyle`${styles}`;
+
+export {styles as ButtonCallToActionStyles};
